@@ -5,10 +5,10 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.106.143.218:3306/rbgt
-    hikari: # springboot 2.0 ÕûºÏÁËhikari ,¾İËµÕâÊÇÄ¿Ç°ĞÔÄÜ×îºÃµÄjavaÊı¾İ¿âÁ¬½Ó³Ø
+    hikari: # springboot 2.0 æ•´åˆäº†hikari ,æ®è¯´è¿™æ˜¯ç›®å‰æ€§èƒ½æœ€å¥½çš„javaæ•°æ®åº“è¿æ¥æ± 
       username: root
       password: 123456
   jpa:
     hibernate:
-      ddl-auto: update  # µÚÒ»´Î½¨±ícreate  ºóÃæÓÃupdate£¬Òª²»È»Ã¿´ÎÖØÆô¶¼»áĞÂ½¨±í
+      ddl-auto: update  # ç¬¬ä¸€æ¬¡å»ºè¡¨create  åé¢ç”¨updateï¼Œè¦ä¸ç„¶æ¯æ¬¡é‡å¯éƒ½ä¼šæ–°å»ºè¡¨
     show-sql: true
