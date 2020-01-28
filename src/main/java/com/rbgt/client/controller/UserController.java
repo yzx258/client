@@ -36,16 +36,14 @@ public class UserController {
     private UserService userService;
 
     @ApiOperation(value = "查询用户所有信息",notes = "携带的参数必填",httpMethod = "GET")
-    @ApiImplicitParam(dataType = "string",name = "name",value = "姓名",required = true)
-    @GetMapping("/list")
-    public Object findAll(String name) {
-        System.out.println("name:"+name);
+    @GetMapping(value = "/list")
+    public List<School> findAll() {
         List<School> list = userService.findAll();
         return list;
     }
 
     private String msg = "ok";
-    @RequestMapping("/hello")
+    @RequestMapping(value = "/hello")
     public String hello() {
         String[] arr = new String[2];
         arr[0] = "213";
@@ -55,14 +53,15 @@ public class UserController {
         return "ok";
     }
 
-    @RequestMapping("/hellos")
+    @RequestMapping(value = "/hellos")
     public void hellos() {
         int num = 1/0;
         //throw new BusinessException("100","密码错误");
         //return this.msg;
     }
 
-    @GetMapping("/{userId}")
+    @ApiImplicitParam(name = "userId", value = "用户ID", required = true, paramType="path", dataType = "String")
+    @GetMapping(value = "/lists/{userId}")
     public Object getUserById(@PathVariable Integer userId){
         if(userId.equals(0)){
             throw new BaseException(ResponseCode.RESOURCES_NOT_EXIST);
