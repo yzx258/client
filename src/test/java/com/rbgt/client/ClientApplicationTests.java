@@ -1,5 +1,8 @@
 package com.rbgt.client;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectReader;
 import com.rbgt.client.dao.SchoolDao;
 import com.rbgt.client.entity.School;
 import com.rbgt.client.entity.Student;
@@ -7,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,4 +38,16 @@ class ClientApplicationTests {
         SchoolDao.saveAndFlush(entity);
     }
 
+    public static void main(String[] args) throws IOException {
+        School entity = new School();
+        entity.setName("a学校");
+        entity.setAddress("龙场");
+
+        ObjectMapper json = new ObjectMapper();
+        String s = json.writeValueAsString(entity);
+        System.out.println("我是jackson转换的对象：" + s);
+
+        School school = json.readValue(s, School.class);
+        System.out.println(school);
+    }
 }
