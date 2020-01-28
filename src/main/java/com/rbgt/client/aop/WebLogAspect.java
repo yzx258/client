@@ -13,6 +13,8 @@ import java.util.Arrays;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.rbgt.client.data.ResponseCode;
+import com.rbgt.client.exception.BaseException;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
@@ -34,7 +36,10 @@ public class WebLogAspect {
 
     private final Logger logger = LoggerFactory.getLogger(WebLogAspect.class);
 
-    @Pointcut("execution(public * com.rbgt.client.controller..*.*(..))")//切入点描述 这个是controller包的切入点
+    /**
+     * 切入点描述 这个是controller包的切入点
+     */
+    @Pointcut("execution(public * com.rbgt.client.controller..*.*(..))")
     public void controllerLog(){}//签名，可以理解成这个切入点的一个名称
 
 
@@ -57,5 +62,12 @@ public class WebLogAspect {
         logger.info("################CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
         //logger.info("################TARGET: " + joinPoint.getTarget());//返回的是需要加强的目标类的对象
         //logger.info("################THIS: " + joinPoint.getThis());//返回的是经过加强后的代理类的对象
+    }
+
+    @AfterReturning(returning = "ret", pointcut = "controllerLog()")
+    public void doAfterReturning(Object ret) throws Throwable {
+        // 处理完请求，返回内容
+        logger.info("RESPONSE: {} " , ret);
+        logger.info("SPEND TIME: {} ms", System.currentTimeMillis());
     }
 }

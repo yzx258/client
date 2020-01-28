@@ -39,6 +39,10 @@ public class UserController {
     @GetMapping(value = "/list")
     public List<School> findAll() {
         List<School> list = userService.findAll();
+        if(list.size() != 0)
+        {
+            throw new BaseException(ResponseCode.RESOURCES_NOT_EXIST);
+        }
         return list;
     }
 
@@ -48,14 +52,13 @@ public class UserController {
         String[] arr = new String[2];
         arr[0] = "213";
         arr[1] = "213";
-        arr[2] = "213";
-        arr[3] = "213";
         return "ok";
     }
 
     @RequestMapping(value = "/hellos")
     public void hellos() {
-        int num = 1/0;
+        throw new BaseException(ResponseCode.RESOURCES_NOT_EXIST);
+        //int num = 1/0;
         //throw new BusinessException("100","密码错误");
         //return this.msg;
     }
