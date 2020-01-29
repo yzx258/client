@@ -74,6 +74,9 @@ public class UserController {
         return userId;
     }
 
+
+    @ResponseBody
+    @ApiOperation(value = "保存用户所有信息",notes = "携带的参数必填",httpMethod = "POST")
     @PostMapping(value = "/save",produces = "application/json;charset=UTF-8")
     public Object saveUser(@RequestBody @Valid School s)
     {
