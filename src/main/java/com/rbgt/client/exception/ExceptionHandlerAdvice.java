@@ -25,8 +25,9 @@ public class ExceptionHandlerAdvice {
      */
     @ExceptionHandler(Exception.class)
     public ResponseResult handleException(Exception e){
-        log.info("错误信息1 {}",new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),null));
-        return new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),null);
+        log.info("错误信息1-1 {}",e.getMessage());
+        log.info("错误信息1-2 {}",new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),e.getMessage()));
+        return new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),e.getMessage());
     }
 
     /**
@@ -37,8 +38,8 @@ public class ExceptionHandlerAdvice {
     @ExceptionHandler(RuntimeException.class)
     public ResponseResult handleRuntimeException(RuntimeException e){
         log.info("错误信息2-1 {}",e.getMessage());
-        log.info("错误信息2-2 {}",new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),null));
-        return new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),null);
+        log.info("错误信息2-2 {}",new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),e.getMessage()));
+        return new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),e.getMessage());
     }
 
     /**
@@ -49,7 +50,7 @@ public class ExceptionHandlerAdvice {
     @ExceptionHandler(BaseException.class)
     public ResponseResult handleBaseException(BaseException e){
         ResponseCode code=e.getCode();
-        log.info("错误信息3 {}",new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),null));
-        return new ResponseResult(code.getCode(),code.getMsg(),null);
+        log.info("错误信息3 {}",new ResponseResult(ResponseCode.SERVICE_ERROR.getCode(),ResponseCode.SERVICE_ERROR.getMsg(),e.getMessage()));
+        return new ResponseResult(code.getCode(),code.getMsg(),e.getMessage());
     }
 }

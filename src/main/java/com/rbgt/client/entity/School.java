@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -38,4 +39,7 @@ public class School {
     @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true)
     @JoinColumn(name = "sch_id")
     private List<Student> students;
+
+    @NotNull(message = "comment is not null")
+    private String comment;
 }
