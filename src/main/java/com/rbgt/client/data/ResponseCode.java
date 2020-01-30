@@ -24,7 +24,11 @@ public enum ResponseCode {
     /**
      * 所有无法识别的异常默认的返回状态码
      */
-    SERVICE_ERROR(50000, "服务器异常");
+    SERVICE_ERROR(50000, "服务器异常"),
+    /**
+     * 所有无权限的返回状态码
+     */
+    NOT_PERMISSION(10002,"无访问权限");
     /**
      * 状态码
      */

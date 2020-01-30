@@ -9,6 +9,7 @@ package com.rbgt.client.aop;
  * @time: 16:29
  * @day_name_full: 星期二
  **/
+import java.lang.reflect.Method;
 import java.util.Arrays;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,12 +24,33 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.reflect.MethodSignature;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+
+import javax.servlet.http.HttpServletRequest;
+
 
 @Aspect
 @Component
@@ -42,6 +64,36 @@ public class WebLogAspect {
     @Pointcut("execution(public * com.rbgt.client.controller..*.*(..))")
     public void controllerLog(){}//签名，可以理解成这个切入点的一个名称
 
+
+    @Around("controllerLog()")
+    public Object access(ProceedingJoinPoint joinPoint) throws Throwable {
+        MethodSignature joinPointObject = (MethodSignature) joinPoint.getSignature();
+        //获得请求的方法
+        Method method = joinPointObject.getMethod();
+        String token = (String) getParams("token");
+        System.out.println("token ====================== " + token);
+        String tokenRabat = "123456";
+        if (token.equals(tokenRabat)) {
+            System.out.println("token is ok");
+        } else {
+            throw new BaseException(ResponseCode.NOT_PERMISSION);
+        }
+        Object obj = joinPoint.proceed();
+        return obj;
+    }
+
+    /**
+     * 获取参数
+     *
+     * @param key
+     * @return
+     */
+    private Object getParams(String key) {
+        RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
+        ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) requestAttributes;
+        HttpServletRequest request = servletRequestAttributes.getRequest();
+        return request.getParameter(key);
+    }
 
     /**
      * 在切入点的方法run之前要干的

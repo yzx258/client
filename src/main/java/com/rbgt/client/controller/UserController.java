@@ -37,10 +37,7 @@ public class UserController {
     @GetMapping(value = "/list")
     public List<School> findAll() {
         List<School> list = userService.findAll();
-        if(list.size() != 0)
-        {
-            throw new BaseException(ResponseCode.RESOURCES_NOT_EXIST);
-        }
+        System.out.println(list.size());
         return list;
     }
 
