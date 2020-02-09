@@ -28,7 +28,17 @@ public enum ResponseCode {
     /**
      * 所有无权限的返回状态码
      */
-    NOT_PERMISSION(10002,"无访问权限");
+    NOT_PERMISSION(10002,"无访问权限"),
+
+    /**
+     * 无效的token
+     */
+    NOT_TOKEN(20001,"无效的token"),
+    /**
+     * JWT令牌不是以承载字符串开始的
+     */
+    NOT_TOKEN_JWT(20002,"JWT令牌不是以承载字符串开始的");
+
     /**
      * 状态码
      */

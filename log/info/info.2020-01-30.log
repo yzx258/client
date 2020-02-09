@@ -1,0 +1,235 @@
+2020-01-30 15:03:16.624 [restartedMain] INFO  c.r.c.ClientApplication - [logStarting,55] - Starting ClientApplication on PC-201911242152 with PID 13472 (G:\IDEAPRECT\GIT\client\target\classes started by Administrator in G:\IDEAPRECT\GIT\client)
+2020-01-30 15:03:16.679 [restartedMain] INFO  c.r.c.ClientApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+2020-01-30 15:03:16.783 [restartedMain] INFO  o.s.b.d.r.ChangeableUrls - [logTo,225] - The Class-Path manifest attribute in D:\WorkSoftware\maven\maven3.6.2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-30 15:03:16.783 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-30 15:03:16.784 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-30 15:03:18.908 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,127] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 15:03:19.218 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,187] - Finished Spring Data repository scanning in 172ms. Found 1 JPA repository interfaces.
+2020-01-30 15:03:19.946 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - [postProcessAfterInitialization,330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 15:03:20.808 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,92] - Tomcat initialized with port(s): 8080 (http)
+2020-01-30 15:03:20.832 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:03:20.833 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2020-01-30 15:03:20.833 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-30 15:03:21.226 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2020-01-30 15:03:21.227 [restartedMain] INFO  o.s.w.c.ContextLoader - [prepareWebApplicationContext,284] - Root WebApplicationContext: initialization completed in 4442 ms
+2020-01-30 15:03:21.495 [restartedMain] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 15:03:21.647 [restartedMain] INFO  o.hibernate.Version - [logVersion,46] - HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-30 15:03:21.921 [restartedMain] INFO  o.h.a.common.Version - [<clinit>,49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 15:03:22.151 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - MyHikariCP - Starting...
+2020-01-30 15:03:23.277 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - MyHikariCP - Start completed.
+2020-01-30 15:03:23.303 [restartedMain] INFO  o.h.dialect.Dialect - [<init>,172] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-30 15:03:24.798 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 15:03:24.809 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 15:03:25.109 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - [startServer,58] - LiveReload server is running on port 35729
+2020-01-30 15:03:26.564 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-30 15:03:26.930 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 15:03:27.693 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,151] - Context refreshed
+2020-01-30 15:03:27.715 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,154] - Found 1 custom documentation plugin(s)
+2020-01-30 15:03:27.749 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2020-01-30 15:03:28.068 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:03:28.097 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [start,204] - Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-30 15:03:28.100 [restartedMain] INFO  c.r.c.ClientApplication - [logStarted,61] - Started ClientApplication in 12.416 seconds (JVM running for 14.239)
+2020-01-30 15:03:47.312 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-30 15:03:47.312 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2020-01-30 15:03:47.324 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 12 ms
+2020-01-30 15:03:47.421 [http-nio-8080-exec-1] INFO  c.r.c.e.ExceptionHandlerAdvice - [handleException,28] - 错误信息1-1 Validation failed for argument [0] in public java.lang.Object com.rbgt.client.controller.UserController.saveUser(com.rbgt.client.entity.School): [Field error in object 'school' on field 'comment': rejected value [null]; codes [NotNull.school.comment,NotNull.comment,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [school.comment,comment]; arguments []; default message [comment]]; default message [comment is not null]] 
+2020-01-30 15:03:47.422 [http-nio-8080-exec-1] INFO  c.r.c.e.ExceptionHandlerAdvice - [handleException,29] - 错误信息1-2 ResponseResult(code=50000, msg=服务器异常, data=Validation failed for argument [0] in public java.lang.Object com.rbgt.client.controller.UserController.saveUser(com.rbgt.client.entity.School): [Field error in object 'school' on field 'comment': rejected value [null]; codes [NotNull.school.comment,NotNull.comment,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [school.comment,comment]; arguments []; default message [comment]]; default message [comment is not null]] )
+2020-01-30 15:04:11.573 [http-nio-8080-exec-3] INFO  c.r.c.e.ExceptionHandlerAdvice - [handleRuntimeException,40] - 错误信息2-1 null
+2020-01-30 15:04:11.574 [http-nio-8080-exec-3] INFO  c.r.c.e.ExceptionHandlerAdvice - [handleRuntimeException,41] - 错误信息2-2 ResponseResult(code=50000, msg=服务器异常, data=null)
+2020-01-30 15:04:38.677 [http-nio-8080-exec-4] INFO  c.r.c.e.ExceptionHandlerAdvice - [handleBaseException,53] - 错误信息3 ResponseResult(code=50000, msg=服务器异常, data=null)
+2020-01-30 15:05:12.402 [http-nio-8080-exec-5] INFO  c.r.c.a.WebLogAspect - [logBeforeController,113] - ################URL : http://localhost:8080/hello
+2020-01-30 15:05:12.403 [http-nio-8080-exec-5] INFO  c.r.c.a.WebLogAspect - [logBeforeController,114] - ################HTTP_METHOD : GET
+2020-01-30 15:05:12.404 [http-nio-8080-exec-5] INFO  c.r.c.a.WebLogAspect - [logBeforeController,115] - ################IP : 0:0:0:0:0:0:0:1
+2020-01-30 15:05:12.404 [http-nio-8080-exec-5] INFO  c.r.c.a.WebLogAspect - [logBeforeController,116] - ################THE ARGS OF THE CONTROLLER : []
+2020-01-30 15:05:12.404 [http-nio-8080-exec-5] INFO  c.r.c.a.WebLogAspect - [logBeforeController,119] - ################CLASS_METHOD : com.rbgt.client.controller.UserController.hello
+2020-01-30 15:05:12.410 [http-nio-8080-exec-5] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,127] - RESPONSE: null 
+2020-01-30 15:05:12.411 [http-nio-8080-exec-5] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,128] - SPEND TIME: 1580367912411 ms
+2020-01-30 15:05:12.415 [http-nio-8080-exec-5] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,22] - returnType:method 'hello' parameter -1
+2020-01-30 15:05:12.415 [http-nio-8080-exec-5] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,23] - converterType:class org.springframework.http.converter.StringHttpMessageConverter
+2020-01-30 15:05:20.713 [http-nio-8080-exec-6] INFO  c.r.c.a.WebLogAspect - [logBeforeController,113] - ################URL : http://localhost:8080/list
+2020-01-30 15:05:20.714 [http-nio-8080-exec-6] INFO  c.r.c.a.WebLogAspect - [logBeforeController,114] - ################HTTP_METHOD : GET
+2020-01-30 15:05:20.714 [http-nio-8080-exec-6] INFO  c.r.c.a.WebLogAspect - [logBeforeController,115] - ################IP : 0:0:0:0:0:0:0:1
+2020-01-30 15:05:20.715 [http-nio-8080-exec-6] INFO  c.r.c.a.WebLogAspect - [logBeforeController,116] - ################THE ARGS OF THE CONTROLLER : []
+2020-01-30 15:05:20.715 [http-nio-8080-exec-6] INFO  c.r.c.a.WebLogAspect - [logBeforeController,119] - ################CLASS_METHOD : com.rbgt.client.controller.UserController.findAll
+2020-01-30 15:05:21.262 [http-nio-8080-exec-6] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,127] - RESPONSE: null 
+2020-01-30 15:05:21.264 [http-nio-8080-exec-6] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,128] - SPEND TIME: 1580367921264 ms
+2020-01-30 15:05:21.272 [http-nio-8080-exec-6] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,22] - returnType:method 'findAll' parameter -1
+2020-01-30 15:05:21.273 [http-nio-8080-exec-6] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,23] - converterType:class org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2020-01-30 15:05:59.880 [restartedMain] INFO  c.r.c.ClientApplication - [logStarting,55] - Starting ClientApplication on PC-201911242152 with PID 15004 (G:\IDEAPRECT\GIT\client\target\classes started by Administrator in G:\IDEAPRECT\GIT\client)
+2020-01-30 15:05:59.885 [restartedMain] INFO  c.r.c.ClientApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+2020-01-30 15:06:00.045 [restartedMain] INFO  o.s.b.d.r.ChangeableUrls - [logTo,225] - The Class-Path manifest attribute in D:\WorkSoftware\maven\maven3.6.2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-30 15:06:00.046 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-30 15:06:00.046 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-30 15:06:00.896 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,127] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 15:06:00.950 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,187] - Finished Spring Data repository scanning in 46ms. Found 1 JPA repository interfaces.
+2020-01-30 15:06:01.284 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - [postProcessAfterInitialization,330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 15:06:01.776 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,92] - Tomcat initialized with port(s): 8080 (http)
+2020-01-30 15:06:01.787 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:06:01.788 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2020-01-30 15:06:01.789 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-30 15:06:01.959 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2020-01-30 15:06:01.960 [restartedMain] INFO  o.s.w.c.ContextLoader - [prepareWebApplicationContext,284] - Root WebApplicationContext: initialization completed in 1913 ms
+2020-01-30 15:06:02.153 [restartedMain] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 15:06:02.211 [restartedMain] INFO  o.hibernate.Version - [logVersion,46] - HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-30 15:06:02.305 [restartedMain] INFO  o.h.a.common.Version - [<clinit>,49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 15:06:02.388 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - MyHikariCP - Starting...
+2020-01-30 15:06:03.356 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - MyHikariCP - Start completed.
+2020-01-30 15:06:03.390 [restartedMain] INFO  o.h.dialect.Dialect - [<init>,172] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-30 15:06:04.411 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 15:06:04.421 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 15:06:04.518 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - [startServer,58] - LiveReload server is running on port 35729
+2020-01-30 15:06:05.388 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-30 15:06:05.669 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 15:06:06.192 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,151] - Context refreshed
+2020-01-30 15:06:06.210 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,154] - Found 1 custom documentation plugin(s)
+2020-01-30 15:06:06.236 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2020-01-30 15:06:06.401 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:06:06.424 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [start,204] - Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-30 15:06:06.427 [restartedMain] INFO  c.r.c.ClientApplication - [logStarted,61] - Started ClientApplication in 7.272 seconds (JVM running for 8.285)
+2020-01-30 15:06:09.926 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-30 15:06:09.926 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2020-01-30 15:06:09.935 [http-nio-8080-exec-2] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 9 ms
+2020-01-30 15:06:09.957 [http-nio-8080-exec-2] INFO  c.r.c.a.WebLogAspect - [logBeforeController,113] - ################URL : http://localhost:8080/list
+2020-01-30 15:06:09.957 [http-nio-8080-exec-2] INFO  c.r.c.a.WebLogAspect - [logBeforeController,114] - ################HTTP_METHOD : GET
+2020-01-30 15:06:09.957 [http-nio-8080-exec-2] INFO  c.r.c.a.WebLogAspect - [logBeforeController,115] - ################IP : 0:0:0:0:0:0:0:1
+2020-01-30 15:06:09.958 [http-nio-8080-exec-2] INFO  c.r.c.a.WebLogAspect - [logBeforeController,116] - ################THE ARGS OF THE CONTROLLER : []
+2020-01-30 15:06:09.958 [http-nio-8080-exec-2] INFO  c.r.c.a.WebLogAspect - [logBeforeController,119] - ################CLASS_METHOD : com.rbgt.client.controller.UserController.findAll
+2020-01-30 15:06:10.493 [http-nio-8080-exec-2] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,127] - RESPONSE: null 
+2020-01-30 15:06:10.495 [http-nio-8080-exec-2] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,128] - SPEND TIME: 1580367970495 ms
+2020-01-30 15:06:10.536 [http-nio-8080-exec-2] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,22] - returnType:method 'findAll' parameter -1
+2020-01-30 15:06:10.537 [http-nio-8080-exec-2] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,23] - converterType:class org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2020-01-30 15:07:35.709 [restartedMain] INFO  c.r.c.ClientApplication - [logStarting,55] - Starting ClientApplication on PC-201911242152 with PID 15632 (G:\IDEAPRECT\GIT\client\target\classes started by Administrator in G:\IDEAPRECT\GIT\client)
+2020-01-30 15:07:35.714 [restartedMain] INFO  c.r.c.ClientApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+2020-01-30 15:07:35.775 [restartedMain] INFO  o.s.b.d.r.ChangeableUrls - [logTo,225] - The Class-Path manifest attribute in D:\WorkSoftware\maven\maven3.6.2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-30 15:07:35.775 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-30 15:07:35.776 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-30 15:07:36.571 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,127] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 15:07:36.627 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,187] - Finished Spring Data repository scanning in 48ms. Found 1 JPA repository interfaces.
+2020-01-30 15:07:36.929 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - [postProcessAfterInitialization,330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 15:07:37.360 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,92] - Tomcat initialized with port(s): 8080 (http)
+2020-01-30 15:07:37.384 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:07:37.386 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2020-01-30 15:07:37.386 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-30 15:07:37.557 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2020-01-30 15:07:37.558 [restartedMain] INFO  o.s.w.c.ContextLoader - [prepareWebApplicationContext,284] - Root WebApplicationContext: initialization completed in 1781 ms
+2020-01-30 15:07:37.732 [restartedMain] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 15:07:37.787 [restartedMain] INFO  o.hibernate.Version - [logVersion,46] - HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-30 15:07:37.882 [restartedMain] INFO  o.h.a.common.Version - [<clinit>,49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 15:07:37.960 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - MyHikariCP - Starting...
+2020-01-30 15:07:39.050 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - MyHikariCP - Start completed.
+2020-01-30 15:07:39.083 [restartedMain] INFO  o.h.dialect.Dialect - [<init>,172] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-30 15:07:40.043 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 15:07:40.060 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 15:07:40.153 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - [startServer,58] - LiveReload server is running on port 35729
+2020-01-30 15:07:40.929 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-30 15:07:41.122 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 15:07:41.666 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,151] - Context refreshed
+2020-01-30 15:07:41.680 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,154] - Found 1 custom documentation plugin(s)
+2020-01-30 15:07:41.703 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2020-01-30 15:07:41.868 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:07:41.892 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [start,204] - Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-30 15:07:41.895 [restartedMain] INFO  c.r.c.ClientApplication - [logStarted,61] - Started ClientApplication in 7.112 seconds (JVM running for 8.088)
+2020-01-30 15:12:31.286 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-30 15:12:31.286 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2020-01-30 15:12:31.297 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 10 ms
+2020-01-30 15:12:31.320 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,113] - ################URL : http://localhost:8080/list
+2020-01-30 15:12:31.320 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,114] - ################HTTP_METHOD : GET
+2020-01-30 15:12:31.321 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,115] - ################IP : 0:0:0:0:0:0:0:1
+2020-01-30 15:12:31.321 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,116] - ################THE ARGS OF THE CONTROLLER : []
+2020-01-30 15:12:31.321 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,119] - ################CLASS_METHOD : com.rbgt.client.controller.UserController.findAll
+2020-01-30 15:12:31.838 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,127] - RESPONSE: null 
+2020-01-30 15:12:31.839 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,128] - SPEND TIME: 1580368351839 ms
+2020-01-30 15:12:31.857 [http-nio-8080-exec-1] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,22] - returnType:method 'findAll' parameter -1
+2020-01-30 15:12:31.857 [http-nio-8080-exec-1] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,23] - converterType:class org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2020-01-30 15:13:26.179 [restartedMain] INFO  c.r.c.ClientApplication - [logStarting,55] - Starting ClientApplication on PC-201911242152 with PID 16092 (G:\IDEAPRECT\GIT\client\target\classes started by Administrator in G:\IDEAPRECT\GIT\client)
+2020-01-30 15:13:26.186 [restartedMain] INFO  c.r.c.ClientApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+2020-01-30 15:13:26.249 [restartedMain] INFO  o.s.b.d.r.ChangeableUrls - [logTo,225] - The Class-Path manifest attribute in D:\WorkSoftware\maven\maven3.6.2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-30 15:13:26.250 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-30 15:13:26.250 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-30 15:13:27.073 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,127] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 15:13:27.126 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,187] - Finished Spring Data repository scanning in 45ms. Found 1 JPA repository interfaces.
+2020-01-30 15:13:27.417 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - [postProcessAfterInitialization,330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 15:13:27.879 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,92] - Tomcat initialized with port(s): 8080 (http)
+2020-01-30 15:13:27.888 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:13:27.889 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2020-01-30 15:13:27.889 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-30 15:13:28.067 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2020-01-30 15:13:28.067 [restartedMain] INFO  o.s.w.c.ContextLoader - [prepareWebApplicationContext,284] - Root WebApplicationContext: initialization completed in 1816 ms
+2020-01-30 15:13:28.242 [restartedMain] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 15:13:28.296 [restartedMain] INFO  o.hibernate.Version - [logVersion,46] - HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-30 15:13:28.396 [restartedMain] INFO  o.h.a.common.Version - [<clinit>,49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 15:13:28.472 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - MyHikariCP - Starting...
+2020-01-30 15:13:29.402 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - MyHikariCP - Start completed.
+2020-01-30 15:13:29.433 [restartedMain] INFO  o.h.dialect.Dialect - [<init>,172] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-30 15:13:30.396 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 15:13:30.405 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 15:13:30.474 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - [startServer,58] - LiveReload server is running on port 35729
+2020-01-30 15:13:31.251 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-30 15:13:31.438 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 15:13:31.891 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,151] - Context refreshed
+2020-01-30 15:13:31.910 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,154] - Found 1 custom documentation plugin(s)
+2020-01-30 15:13:31.935 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2020-01-30 15:13:32.101 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:13:32.124 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [start,204] - Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-30 15:13:32.126 [restartedMain] INFO  c.r.c.ClientApplication - [logStarted,61] - Started ClientApplication in 6.827 seconds (JVM running for 7.759)
+2020-01-30 15:13:36.216 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-30 15:13:36.217 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2020-01-30 15:13:36.227 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 10 ms
+2020-01-30 15:13:36.248 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,120] - RESPONSE: null 
+2020-01-30 15:13:36.249 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,121] - SPEND TIME: 1580368416249 ms
+2020-01-30 15:13:36.261 [http-nio-8080-exec-1] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,22] - returnType:method 'findAll' parameter -1
+2020-01-30 15:13:36.261 [http-nio-8080-exec-1] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,23] - converterType:class org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2020-01-30 15:14:30.780 [restartedMain] INFO  c.r.c.ClientApplication - [logStarting,55] - Starting ClientApplication on PC-201911242152 with PID 8476 (G:\IDEAPRECT\GIT\client\target\classes started by Administrator in G:\IDEAPRECT\GIT\client)
+2020-01-30 15:14:30.785 [restartedMain] INFO  c.r.c.ClientApplication - [logStartupProfileInfo,651] - No active profile set, falling back to default profiles: default
+2020-01-30 15:14:30.863 [restartedMain] INFO  o.s.b.d.r.ChangeableUrls - [logTo,225] - The Class-Path manifest attribute in D:\WorkSoftware\maven\maven3.6.2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/D:/WorkSoftware/maven/maven3.6.2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-01-30 15:14:30.864 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-01-30 15:14:30.865 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - [logTo,225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-01-30 15:14:31.783 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,127] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 15:14:31.841 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - [registerRepositoriesIn,187] - Finished Spring Data repository scanning in 49ms. Found 1 JPA repository interfaces.
+2020-01-30 15:14:32.151 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - [postProcessAfterInitialization,330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 15:14:32.611 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [initialize,92] - Tomcat initialized with port(s): 8080 (http)
+2020-01-30 15:14:32.633 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:14:32.635 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+2020-01-30 15:14:32.635 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-30 15:14:32.834 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+2020-01-30 15:14:32.834 [restartedMain] INFO  o.s.w.c.ContextLoader - [prepareWebApplicationContext,284] - Root WebApplicationContext: initialization completed in 1969 ms
+2020-01-30 15:14:33.003 [restartedMain] INFO  o.h.j.i.u.LogHelper - [logPersistenceUnitInformation,31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 15:14:33.055 [restartedMain] INFO  o.hibernate.Version - [logVersion,46] - HHH000412: Hibernate Core {5.4.9.Final}
+2020-01-30 15:14:33.147 [restartedMain] INFO  o.h.a.common.Version - [<clinit>,49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 15:14:33.224 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,110] - MyHikariCP - Starting...
+2020-01-30 15:14:34.287 [restartedMain] INFO  c.z.h.HikariDataSource - [getConnection,123] - MyHikariCP - Start completed.
+2020-01-30 15:14:34.302 [restartedMain] INFO  o.h.dialect.Dialect - [<init>,172] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-30 15:14:35.278 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - [initiateService,52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 15:14:35.286 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - [buildNativeEntityManagerFactory,416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 15:14:35.360 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - [startServer,58] - LiveReload server is running on port 35729
+2020-01-30 15:14:36.158 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-01-30 15:14:36.354 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - [initialize,171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 15:14:36.837 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,151] - Context refreshed
+2020-01-30 15:14:36.851 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,154] - Found 1 custom documentation plugin(s)
+2020-01-30 15:14:36.874 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+2020-01-30 15:14:37.038 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+2020-01-30 15:14:37.062 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer - [start,204] - Tomcat started on port(s): 8080 (http) with context path ''
+2020-01-30 15:14:37.065 [restartedMain] INFO  c.r.c.ClientApplication - [logStarted,61] - Started ClientApplication in 7.218 seconds (JVM running for 8.285)
+2020-01-30 15:14:42.134 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-30 15:14:42.135 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,525] - Initializing Servlet 'dispatcherServlet'
+2020-01-30 15:14:42.148 [http-nio-8080-exec-1] INFO  o.s.w.s.DispatcherServlet - [initServletBean,547] - Completed initialization in 13 ms
+2020-01-30 15:14:42.174 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,108] - ################URL : http://localhost:8080/list
+2020-01-30 15:14:42.175 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,109] - ################HTTP_METHOD : GET
+2020-01-30 15:14:42.175 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,110] - ################IP : 0:0:0:0:0:0:0:1
+2020-01-30 15:14:42.176 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,111] - ################THE ARGS OF THE CONTROLLER : []
+2020-01-30 15:14:42.176 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [logBeforeController,114] - ################CLASS_METHOD : com.rbgt.client.controller.UserController.findAll
+2020-01-30 15:14:42.729 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,122] - RESPONSE: [School(id=2, name=a学校, address=龙场, students=[Student(id=2, schId=2, schName=null, age=123sss, name=小明ssss, address=null), Student(id=3, schId=2, schName=null, age=13sss, name=小华ssssss, address=null)], comment=)] 
+2020-01-30 15:14:42.820 [http-nio-8080-exec-1] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,123] - SPEND TIME: 1580368482820 ms
+2020-01-30 15:14:42.840 [http-nio-8080-exec-1] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,22] - returnType:method 'findAll' parameter -1
+2020-01-30 15:14:42.841 [http-nio-8080-exec-1] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,23] - converterType:class org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
+2020-01-30 15:16:16.944 [http-nio-8080-exec-5] INFO  c.r.c.e.ExceptionHandlerAdvice - [handleBaseException,53] - 错误信息3 ResponseResult(code=50000, msg=服务器异常, data=null)
+2020-01-30 15:16:47.018 [http-nio-8080-exec-6] INFO  c.r.c.e.ExceptionHandlerAdvice - [handleBaseException,53] - 错误信息3 ResponseResult(code=50000, msg=服务器异常, data=null)
+2020-01-30 15:16:54.950 [http-nio-8080-exec-7] INFO  c.r.c.a.WebLogAspect - [logBeforeController,108] - ################URL : http://localhost:8080/list
+2020-01-30 15:16:54.951 [http-nio-8080-exec-7] INFO  c.r.c.a.WebLogAspect - [logBeforeController,109] - ################HTTP_METHOD : GET
+2020-01-30 15:16:54.951 [http-nio-8080-exec-7] INFO  c.r.c.a.WebLogAspect - [logBeforeController,110] - ################IP : 0:0:0:0:0:0:0:1
+2020-01-30 15:16:54.951 [http-nio-8080-exec-7] INFO  c.r.c.a.WebLogAspect - [logBeforeController,111] - ################THE ARGS OF THE CONTROLLER : []
+2020-01-30 15:16:54.952 [http-nio-8080-exec-7] INFO  c.r.c.a.WebLogAspect - [logBeforeController,114] - ################CLASS_METHOD : com.rbgt.client.controller.UserController.findAll
+2020-01-30 15:16:55.282 [http-nio-8080-exec-7] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,122] - RESPONSE: [School(id=2, name=a学校, address=龙场, students=[Student(id=2, schId=2, schName=null, age=123sss, name=小明ssss, address=null), Student(id=3, schId=2, schName=null, age=13sss, name=小华ssssss, address=null)], comment=)] 
+2020-01-30 15:16:55.335 [http-nio-8080-exec-7] INFO  c.r.c.a.WebLogAspect - [doAfterReturning,123] - SPEND TIME: 1580368615335 ms
+2020-01-30 15:16:55.335 [http-nio-8080-exec-7] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,22] - returnType:method 'findAll' parameter -1
+2020-01-30 15:16:55.336 [http-nio-8080-exec-7] INFO  c.r.c.d.ResponseResultHandlerAdvice - [supports,23] - converterType:class org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
